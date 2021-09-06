@@ -37,6 +37,10 @@ body {
   padding: 0;
 }
 
+.desktop {
+  display: none;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +150,7 @@ main section .form .right {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: -23px;
+  height: 60px;
 }
 
 main section .form .right img {
@@ -166,7 +171,7 @@ main section .form .right:hover {
     padding: 3em !important;
   }
   header img {
-    width: 250px !important;
+    width: 225px !important;
   }
   h1 {
     font-size: 85px !important;
@@ -176,6 +181,71 @@ main section .form .right:hover {
   }
   section {
     padding: 4em !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    height: 100% !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  main header {
+    position: absolute;
+    padding-left: 10em !important;
+  }
+  main .hero-img {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    margin: 0;
+  }
+  main .hero-img img {
+    height: 100%;
+    width: auto;
+    margin-right: 0;
+  }
+  main section {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 0 55% !important;
+            flex: 1 0 55% !important;
+    padding: 10em !important;
+  }
+  main section h1 {
+    text-align: start;
+  }
+  main section p {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main header {
+    padding-left: 15em !important;
+  }
+  main section {
+    padding: 15em !important;
+    padding-right: 10em !important;
   }
 }
 

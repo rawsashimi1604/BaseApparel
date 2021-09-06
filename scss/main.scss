@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+.desktop {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -98,6 +102,7 @@ main {
         justify-content: center;
 
         margin-left: -23px;
+        height: 60px;
 
         img {
           align-self: center;
@@ -117,7 +122,7 @@ main {
   header {
     padding: 3em !important;
     img {
-      width: 250px !important;
+      width: 225px !important;
     }
   }
 
@@ -131,6 +136,72 @@ main {
 
   section {
     padding: 4em !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    height: 100% !important;
+    justify-content: space-between;
+  }
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  main {
+    flex-direction: row;
+    flex-grow: 1;
+
+    header {
+      position: absolute;
+      padding-left: 10em !important;
+    }
+
+    .hero-img {
+      order: 5;
+      margin: 0;
+
+      img {
+        height: 100%;
+        width: auto;
+        margin-right: 0;
+      }
+    }
+
+    section {
+      flex: 1 0 55% !important;
+      padding: 10em !important;
+
+      h1 {
+        text-align: start;
+      }
+
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    header {
+      padding-left: 15em !important;
+    }
+
+    section {
+      padding: 15em !important;
+      padding-right: 10em !important;
+    }
   }
 }
 
