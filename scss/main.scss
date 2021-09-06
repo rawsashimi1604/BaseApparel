@@ -3,4 +3,108 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    padding: 2em;
+    img {
+      width: 150px;
+    }
+  }
+
+  .hero-img {
+    margin-bottom: 2em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  section {
+    padding: 3em;
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      letter-spacing: 10px;
+      color: $col-gray-red;
+      margin-bottom: 0.5em;
+      span {
+        font-weight: 300;
+        color: $col-dark-red;
+      }
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.7;
+      color: $col-dark-red;
+      margin-bottom: 2.5em;
+    }
+
+    .form {
+      display: flex;
+
+      .left {
+        border: 1px solid $col-dark-red;
+        padding: 0.8em 1.3em;
+        border-radius: 50px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        flex: 1 0 80%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          color: $col-dark-red;
+          font-weight: 300;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      .right {
+        border: 1px solid
+          linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border-radius: 50px;
+        flex: 1 0 40px;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 2px 2px 10px hsl(0, 80%, 86%);
+
+        display: flex;
+        justify-content: center;
+
+        margin-left: -23px;
+
+        img {
+          align-self: center;
+        }
+      }
+
+      .right:hover {
+        background: linear-gradient(135deg, hsl(0, 39%, 95%), hsl(0, 53%, 82%));
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
 }

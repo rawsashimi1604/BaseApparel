@@ -8,5 +8,135 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main header {
+  padding: 2em;
+}
+
+main header img {
+  width: 150px;
+}
+
+main .hero-img {
+  margin-bottom: 2em;
+}
+
+main .hero-img img {
+  width: 100%;
+}
+
+main section {
+  padding: 3em;
+}
+
+main section h1 {
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #413a3a;
+  margin-bottom: 0.5em;
+}
+
+main section h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+main section p {
+  text-align: center;
+  line-height: 1.7;
+  color: #ce9797;
+  margin-bottom: 2.5em;
+}
+
+main section .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section .form .left {
+  border: 1px solid #ce9797;
+  padding: 0.8em 1.3em;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 80%;
+          flex: 1 0 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section .form .left span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+main section .form .left img {
+  margin-right: 10px;
+}
+
+main section .form .right {
+  border: 1px solid linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40px;
+          flex: 1 0 40px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 2px 2px 10px #f8bfbf;
+          box-shadow: 2px 2px 10px #f8bfbf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -23px;
+}
+
+main section .form .right img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main section .form .right:hover {
+  background: linear-gradient(135deg, #f7eded, #e9b9b9);
+  cursor: pointer;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
 }
 /*# sourceMappingURL=main.css.map */
