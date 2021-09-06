@@ -5,6 +5,21 @@
   padding: 0;
 }
 
+.none {
+  display: none !important;
+}
+
+.error-msg {
+  display: block;
+  color: #f96262;
+  padding: 0.8em 1.3em;
+}
+
+.error-border {
+  border-color: #f96262 !important;
+  border-width: 3px !important;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
@@ -76,17 +91,21 @@ main section .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main section .form .left {
   border: 1px solid #ce9797;
-  padding: 0.8em 1.3em;
+  padding: 1em 1.3em;
   border-radius: 50px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 80%;
           flex: 1 0 80%;
+  min-height: 60px;
+  max-height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +119,11 @@ main section .form .left {
 
 main section .form .left span {
   color: #ce9797;
+  font-size: 20px;
   font-weight: 300;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main section .form .left img {
@@ -133,6 +156,8 @@ main section .form .right img {
 
 main section .form .right:hover {
   background: linear-gradient(135deg, #f7eded, #e9b9b9);
+  -webkit-box-shadow: 2px 2px 30px #f8bfbf;
+          box-shadow: 2px 2px 30px #f8bfbf;
   cursor: pointer;
 }
 

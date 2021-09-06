@@ -1,3 +1,14 @@
 .none {
-  display: none;
+  display: none !important;
+}
+
+.error-msg {
+  display: block;
+  color: $col-soft-red;
+  padding: 0.8em 1.3em;
+}
+
+.error-border {
+  border-color: $col-soft-red !important;
+  border-width: 3px !important;
 }

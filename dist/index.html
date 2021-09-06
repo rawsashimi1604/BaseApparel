@@ -42,14 +42,16 @@
 
       
       <div class="form">
-        <div class="left" contenteditable="true">
-          <span>Email Address</span>
-          <img src="./images/icon-error.svg" alt="">
+        <div class="left">
+          <span id="email" contenteditable="true">Email Address</span>
+          <img src="./images/icon-error.svg" alt="" id="error-img" class="none">
         </div>
-        <div class="right">
+        <div class="right" id="button">
           <img src="./images/icon-arrow.svg" alt="">
         </div>
-        
+        <div class="error-msg none" id="error-div">
+          <span>Please provide a valid email</span>
+        </div>
       </div>
     </section>
   </main>
@@ -60,5 +62,7 @@
       Coded by <a href="https://github.com/rawsashimi1604" target="_blank">rawsashimi1604</a>.
     </p>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
